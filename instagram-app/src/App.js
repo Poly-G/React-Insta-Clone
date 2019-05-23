@@ -10,6 +10,7 @@ function App() {
       <header className="App-header">
         <SearchBar />
       </header>
+      <hr/>
     </div>
   );
 }

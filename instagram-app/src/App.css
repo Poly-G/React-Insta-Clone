@@ -1,5 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  width: 700px; 
+  width: 1050px; 
   margin: 0 auto; 
   margin-top: 15px;
+}
+
+hr {
+  margin-top: 0;
 }

@@ -5,17 +5,20 @@ class SearchBar extends Component {
     render() {
         return (
             <div className="search">
-                <p>
-                    <i class="fab fa-instagram"></i>
-                    <span>|</span>
-                    <span>Instagram</span>
-                </p>
-                <input/>
-                <p>
-                    <i class="far fa-compass"></i>
-                    <i class="far fa-heart"></i>
-                    <i class="far fa-user"></i>
-                </p>
+                <div>
+                    <span><i className="fab fa-instagram"/></span>
+                    <span className="line">|</span>
+                    <span className="instagram">Instagram</span>
+                </div>
+                <input
+                className="search-input"
+                    placeholder="&#x1F50D; Search"
+                />
+                <div>
+                    <span className="ig-icons"><i className="far fa-compass" /></span>
+                    <span className="ig-icons"><i className="far fa-heart" /></span>
+                    <span className="user"><i className="far fa-user"/></span>
+                </div>
             </div>
         )
     }
