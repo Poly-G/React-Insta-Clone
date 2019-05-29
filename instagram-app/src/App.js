@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react'
 import './App.css';
 
 //import components
@@ -8,16 +8,19 @@ import PostContainer from './components/PostContainer/PostContainer';
 // import dummy data
 import dummyData from './dummy-data';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <SearchBar />
-      </header>
-      <hr/>
-      <PostContainer />
-    </div>
-  );
+class App extends Component {
+
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <SearchBar />
+        </header>
+        <hr />
+        <PostContainer />
+      </div>
+    );
+  }
 }
 
 export default App;
