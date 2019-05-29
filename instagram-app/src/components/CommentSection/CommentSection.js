@@ -11,9 +11,21 @@ class CommentSection extends Component {
         return (
             <div>
                 <div className="comment-section">
+
                     <div className="comments">
-                        
+                        {this.state.comments.map(comment => {
+                            return (
+                                <div>
+                                    <span className="commentUsername">{comment.username}</span>
+                                    <span className="commentText">{comment.text}</span>
+                                </div>
+                            )
+                        })}
                     </div>
+
+                    <hr />
+
+                    
                 </div>
             </div>
         )
