@@ -22,7 +22,15 @@ class PostContainer extends Component {
                             <div className="image-container">
                                 <img className="postImage" src={post.imageUrl} alt="post" />
                             </div>
-                            
+
+                            <div className="footer">
+                                <div className="footer-icons">
+                                    <a> <i className="far fa-heart"></i> </a>
+                                    <i className="far fa-comment"></i>
+                                </div>
+                                <div className="likes">{post.likes} likes</div>
+                            </div>
+                            <CommentSection comments={post.comments} />
                         </div>
                     )
                 })}
