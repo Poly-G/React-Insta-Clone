@@ -9,6 +9,9 @@ import PostContainer from './components/PostContainer/PostContainer';
 import dummyData from './dummy-data';
 
 class App extends Component {
+  state = {
+    data: dummyData
+  }
 
   render() {
     return (
@@ -17,7 +20,7 @@ class App extends Component {
           <SearchBar />
         </header>
         <hr />
-        <PostContainer />
+        <PostContainer data={this.state.data}/>
       </div>
     );
   }
