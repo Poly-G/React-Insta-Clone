@@ -25,7 +25,13 @@ class CommentSection extends Component {
 
                     <hr />
 
-                    
+                    <form className="comment-form">
+                        <input 
+                        type="text"
+                        name="comment"
+                        placeholder="Add a comment..."
+                        />
+                    </form>
                 </div>
             </div>
         )
